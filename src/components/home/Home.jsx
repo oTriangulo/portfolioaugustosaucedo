@@ -5,14 +5,9 @@ import HeaderSocials from './HeaderSocials';
 import ScrollDown from './ScrollDown';
 import Shapes from './Shapes';
 
-const Home = () => {
-  const [showMenu, setShowMenu] = useState(false);
-    
+const Home = () => {    
   return (
     <section className="home container" id="home">
-      <div className="toggleMenu" onClick={() => setShowMenu(!showMenu)}>
-        <i class="fa-solid fa-bars"></i>
-      </div>
 
       <div className="intro">
         <img src={Me} alt="" className="home__img" />

@@ -1,7 +1,7 @@
 import React from 'react';
 import './sidebar.css';
 import Logo from '../../assets/logo.svg';
-
+/* adicionar a sidebar na versão de celular*/
 
 const Sidebar = () => {
   return (
