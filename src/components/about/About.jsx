@@ -1,6 +1,7 @@
 import React from 'react';
 import './about.css';
 import Image from "../../assets/avatar-2.svg";
+import AboutBox from './AboutBox';
 
 const About = () => {
   return (
@@ -26,38 +27,40 @@ const About = () => {
             <div className="skills__data">
               <div className="skills_titles">
                 <h3 className="skills__name">Programação</h3>
-                <span className="skills__number development">50%</span>
+                <span className="skills__number">50%</span>
               </div>
 
-              <div className="skills__bar">
-                <span className="skills__percentage"></span>
+              <div className="skills__bar development">
+                <span className="skills__percentage development"></span>
               </div>
             </div>
 
             <div className="skills__data">
               <div className="skills_titles">
                 <h3 className="skills__name">Edição de Vídeo</h3>
-                <span className="skills__number editing"> 80% </span>
+                <span className="skills__number"> 80% </span>
               </div>
 
-              <div className="skills__bar">
-                <span className="skills__percentage"></span>
+              <div className="skills__bar editing">
+                <span className="skills__percentage editing"></span>
               </div>
             </div>
 
             <div className="skills__data">
               <div className="skills_titles">
                 <h3 className="skills__name"> Desenho Digital </h3>
-                <span className="skills__number drawing">80%</span>
+                <span className="skills__number">60%</span>
               </div>
 
-              <div className="skills__bar">
-                <span className="skills__percentage"></span>
+              <div className="skills__bar drawing">
+                <span className="skills__percentage drawing"></span>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <AboutBox />
     </section>
   )
 }
