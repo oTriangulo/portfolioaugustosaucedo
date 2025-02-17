@@ -1,0 +1,31 @@
+/* O About container é para definir direitinho o espaçamento da grid-template-columns, que serve pra criar uma grind invisivel que usa a tela de maneira definida pelo dev
+por exemplo, 3fr e 9fr faz um valor de 12, usando a foto nos primeiros 3 e o texto nos 9 
+o column-gap serve pra definir o espaçamento entre as colunas*/
+
+.about__container {
+    grid-template-columns: 3fr 9fr;
+    column-gap: 1.875rem;
+}
+
+.about__data {
+    padding: 1.875rem;
+    background-color: var(--container-color);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.875rem;
+    align-items: flex-start;
+    position: relative;
+}
+
+.about__data::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid var(--container-color);
+    position: absolute;
+    left: -0.93rem;
+    top: 20%;
+}
