@@ -8,8 +8,6 @@ import Portfolio from './components/portfolio/Portfolio';
 import About from './components/about/About';
 import Blog from './components/blog/Blog';
 import Contact from './components/contact/Contact';
-import Testimonials from './components/testimonials/Testimonials';
-import Pricing from './components/pricing/Pricing';
 
 function App() {
   return (
@@ -21,9 +19,7 @@ function App() {
         <Services />
         <Resume />
         <Portfolio />
-        <Pricing />
-        <Testimonials />
-        <Blog />
+        {/* <Blog />    Aqui eu vou deixar os posts no futuro*/}
         <Contact />
       </main>
     </>

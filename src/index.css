@@ -1,3 +1,136 @@
+/* ========== Responsive ========== */
+@media screen and (min-width: 1000px) {
+  .toggleMenu {
+    display: none !important;
+  }  
+}
+
+@media screen and (max-width: 1000px) {
+  p {
+    font-size: clamp(0.375rem, 0.4917rem + 0.881vw, 1.625rem);
+  }
+
+  .toggleMenu {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    max-width: 650px;
+  }
+  .about__boxes {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.875rem; 
+  }
+
+  .work__container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.875rem; 
+  }
+  
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    margin-left: 1.5rem !important;
+    margin-right: 1.5rem !important;
+  }
+  .main h2{
+    text-align: center;
+  }
+
+  .section__title::before {
+    opacity: 0 !important;
+  }
+
+  .about__img {
+    text-align: center !important;
+    justify-content: center !important;
+    margin: auto;
+  }
+
+  .about__container {
+    grid-template-columns: 1fr !important;
+    gap: 1.875rem;
+  }
+
+  .services__container {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 1.875rem;
+  }
+  
+  .contact__container {
+    grid-template-columns: 1fr !important;
+    gap: 1.875rem;
+  }
+
+  .btn {
+    margin: auto !important;
+    display: block !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  .about__data {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 1.875rem;
+    text-align: center !important;
+  }
+
+  .about__data::before {
+    border-left: 10px solid transparent !important;
+    border-top: 15px solid transparent !important;
+    border-bottom: 15px solid transparent !important;
+    border-right: 10px solid var(--container-color) !important;
+    position: absolute !important;
+    left: 50% !important;
+    top: -6% !important;
+    rotate: 90deg !important;
+  }
+
+  .s10, .s3, .s6 {
+    opacity: 0 !important;
+  }
+
+  .work__container {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 1.875rem;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .aside {
+    display: none !important;
+  }
+
+  .main {
+    margin-left: 0 !important;
+  }
+  
+  .s11 {
+    opacity: 0 !important;
+  }
+
+  .home {
+    min-height: 95vh !important;
+  }
+
+  p {
+    font-size: clamp(0.375rem, 0.6917rem + 0.881vw, 1.625rem);
+  }
+
+  .resume__container {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 1.875rem;
+  }
+
+  .toggleMenu {
+    display: block !important;
+  }
+}
+
 /* ========== Google Fonts ========== */
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700;1,800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
@@ -13,9 +146,9 @@
 
   /* Font and typography */
   --body-font: 'Rubik', sans-serif;
-  --h1-font-size: 2.25rem;
-  --h2-font-size: 1.5rem;
-  --h3-font-size: 1.25rem;
+  --h1-font-size: clamp(0.5rem, -0.0833rem + 2.6667vw, 2.25rem);
+  --h2-font-size: clamp(0.5rem, 0.1667rem + 1.5238vw, 1.5rem);
+  --h3-font-size: clamp(0.5rem, 0.2917rem + 0.9524vw, 1.125rem);
   --normal-font-size: 1rem;
   --small-font-size: .875rem;
   --smaller-font-size: .813rem;

@@ -161,3 +161,12 @@
     bottom: 10%;
     right: 2%;
 }
+
+.toggleMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 0 0 0;
+    font-size: 24px;
+    color: var(--first-color);
+}

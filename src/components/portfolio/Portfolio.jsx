@@ -4,6 +4,13 @@ import Menu from './Menu';
 
 const Portfolio = () => {
   const [items, setItems] = useState(Menu);
+  const filterItem = (categoryItem) => {
+    const updatedItems = Menu.filter((curElem) => {
+      return curElem.category === categoryItem;
+    })
+
+    setItems(updatedItems);
+  }
 
   return (
     <section className="work container section" id="work">
@@ -11,11 +18,10 @@ const Portfolio = () => {
 
       <div className="work__filters">
 
-      <span className="work__item">Tudo</span>
-      <span className="work__item">Criativo</span>
-      <span className="work__item">Programação</span>
-      <span className="work__item">Arte</span>
-      <span className="work__item">Vídeo</span>
+      <span className="work__item" onClick={() => setItems(Menu)}>Tudo</span>
+      <span className="work__item" onClick={() => filterItem("Programation")}>Programação</span>
+      <span className="work__item" onClick={() => filterItem("Art")}>Arte</span>
+      <span className="work__item" onClick={() => filterItem("Video")}>Vídeo</span>
       </div>
 
       <div className="work__container grid">

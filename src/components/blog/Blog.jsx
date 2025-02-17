@@ -8,3 +8,5 @@ const Blog = () => {
 }
 
 export default Blog
+
+/* em algum momento, vou fazer isso funcionar de maneira mais automatica do que ter que vir e criar essas coisas*/
