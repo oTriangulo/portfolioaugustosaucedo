@@ -138,11 +138,17 @@
 :root {
   /* Colors */
   /*Color mode HSL*/
-  --first-color: hsl(353, 100%, 65%);
-  --title-color: hsl(244, 24%, 26%);
-  --text-color: hsl(244, 16%, 43%);
-  --body-color: hsl(258, 60%, 98%);
-  --container-color: #fff;
+/*  --first-color: #fca311;
+  --title-color: #000000;
+  --text-color: #14213d;
+  --body-color: #f3f3f3;
+  --container-color: #ffffff;*/
+
+  --first-color: #a612c4;
+  --title-color: #c70fc7;
+  --text-color: #ffffff;
+  --body-color: #1a1819;
+  --container-color: #242224;
 
   /* Font and typography */
   --body-font: 'Rubik', sans-serif;
