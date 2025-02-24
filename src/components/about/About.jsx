@@ -1,7 +1,8 @@
 import React from 'react';
 import './about.css';
-import Image from "../../assets/avatar-2.svg";
+import Image from "../../assets/avatar-2.png";
 import AboutBox from './AboutBox';
+import cv from "../../assets/cv-augusto.pdf";
 
 const About = () => {
   return (
@@ -20,7 +21,7 @@ const About = () => {
               programação ou em qualquer outra área criativa.
               Também desenho digitalmente e produzo vídeos para o youtube.
             </p>
-              <a href="" className="btn">Baixe meu CV</a>
+              <a href={cv} className="btn" download={true}>Baixe meu CV</a>
           </div>
 
           <div className="about__skills grid">

@@ -4,6 +4,9 @@ import Logo from '../../assets/logo.svg';
 /* adicionar a sidebar na versão de celular*/
 
 const Sidebar = () => {
+  /* Cria uma variavel que pega o ano e coloca no texto lá em baixo.*/
+  const Year = new Date().getFullYear();
+
   return (
     <aside className="aside">
       <a href="#home" className="nav__logo">
@@ -60,7 +63,7 @@ const Sidebar = () => {
       </nav>
 
       <div className="nav__footer">
-        <span className="copyright">&copy; 2025 • otriangulo </span>
+        <span className="copyright">&copy; {Year} • otriangulo </span>
       </div>
     </aside>
   )

@@ -109,3 +109,8 @@ aqui tem como deixar justificado as informações e tudo mais. */
     font-size: 1.875rem;
 }
 
+.about__img {
+    width: 200px;
+    border-radius: 0.5rem;
+    justify-self: left;
+}

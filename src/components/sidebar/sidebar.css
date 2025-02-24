@@ -36,3 +36,11 @@
     transform: rotate(-180deg);
     writing-mode: vertical-rl;
 }
+
+.nav__logo {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    filter: invert(1);
+}

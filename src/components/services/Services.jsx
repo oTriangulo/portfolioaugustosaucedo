@@ -1,27 +1,27 @@
 import React from 'react';
 import './services.css';
-import Image1 from '../../assets/service-1.svg';
-import Image2 from '../../assets/service-2.svg';
-import Image3 from '../../assets/service-3.svg';
+import Image1 from '../../assets/programming.png';
+import Image2 from '../../assets/digital-art.png';
+import Image3 from '../../assets/montage.png';
 
 const data = [
   {
     id: 1,
     image: Image1,
     title: 'Programação',
-    description: 'Some quick example text to build on the card title and make up the bulk of the card text.',
+    description: 'Experiência em desenvolvimento web com HTML, CSS, JavaScript, React e Python, focado em códigos limpos e eficientes.',
   },
   {
     id: 2,
     image: Image2,
     title: 'Arte Digital',
-    description: 'Some quick example text to build on the card title and make up the bulk of the card text.',
+    description: 'Experiência em arte digital, com foco em design de personagens, cenários e outros elementos visuais.',
   },
   {
     id: 3,
     image: Image3,
     title: 'Edição de vídeo',
-    description: 'Some quick example text to build on the card title and make up the bulk of the card text.',
+    description: 'Experiência em edição de vídeo com Sony Vegas e Premiere, incluindo cortes, transições e efeitos visuais.',
   },
 ];
 
