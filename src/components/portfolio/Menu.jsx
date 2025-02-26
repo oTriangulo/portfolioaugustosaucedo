@@ -2,6 +2,7 @@ import AmbitaCard2__img from "../../assets/CiclodaDorCard.webp";
 import AmbitaCard1__img from "../../assets/CiclodaInocenciaCard.webp";
 import AmbitaCard4__img from "../../assets/CiclodaPerseverancaCard.webp";
 import AmbitaCard3__img from "../../assets/CiclodaResistenciaCard.webp";
+import HanakusoCard__img from "../../assets/HanakusoCard.webp";
 
 /* Tags: Art, Programation, Video */
 
@@ -37,6 +38,14 @@ const Menu = [
       autor: "E.S Iuro",
       category: "Art",
       link: "https://lendadeambita.com.br"
+    },
+    {
+      id: 5,
+      image: HanakusoCard__img,
+      title: "Hanakuso - 2024",
+      autor: "Hanakuso",
+      category: "Video",
+      link: "https://www.youtube.com/@Hanakuso"
     },
   ];
 
