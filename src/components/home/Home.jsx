@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './home.css';
 import Me from '../../assets/avatar-1.jpg';
 import HeaderSocials from './HeaderSocials';

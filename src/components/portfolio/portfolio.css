@@ -31,7 +31,7 @@ aqui ele tá fazendo ser "clicavel"*/
 }
 
 .work__mask {
-    background: #6c6ce5;
+    background: #c96ce5;
     position: absolute;
     left: 0;
     top: 0;
@@ -74,6 +74,19 @@ aqui ele tá fazendo ser "clicavel"*/
     pointer-events: none;
 }
 
+.work__autor {
+    color: #fff;
+    font-size: var(--small-font-size);
+    margin: 0 0 0.98rem;
+    padding: 0 1.25rem;
+    position: absolute;
+    top: 6.25rem;
+    transform: translateY(30px);
+    transition: .3s;
+    opacity: 0;
+    pointer-events: none;
+}
+
 .work__button {
     color: #fff;
     position: absolute;
@@ -92,13 +105,15 @@ aqui ele tá fazendo ser "clicavel"*/
     opacity: 0;
 }
 
-.work__card:hover .work__button {
-    opacity: 1;
-}
-
 
 .work__card:hover .work__title,
 .work__card:hover .work__category {
     opacity: 1;
     transform: translateY(0);
 }
+
+.work__card:hover .work__autor {
+    opacity: 1;
+    transform: translateY(0);
+}
+
